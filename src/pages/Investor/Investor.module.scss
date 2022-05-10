@@ -1,0 +1,186 @@
+.investor{
+  min-height: 87.5vh;
+
+  &__title{
+    padding-left: 7vw;
+    color: #2EB98C;
+    padding-top: 10vh;
+    color: rgb(46, 185, 140);
+    font-family: adobe-caslon-w01-smbd, adobe-caslon-w08-smbd, serif;
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  &__subtitle{
+    box-shadow: 0px 12px 20px rgba(138, 138, 138, 0.15);
+
+    margin-left: 50%;
+    width: 35vw;
+    padding:5vh 1vw;
+    color: #000044;
+    font-family: adobe-caslon-w01-smbd, adobe-caslon-w08-smbd, serif;
+    font-size: 2em;
+    &_btn{
+      text-decoration: none;
+      position: relative;
+      margin-top: 2vh;
+      width: 15vw;
+      border: 2px #4BB490 solid;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      color: #000044;
+      transition: 0.2s;
+      &:hover{
+        background: #4BB490;
+      }
+      &_icon{
+        position: absolute;
+        right: 1.8vw;
+        bottom: 0.2vh;
+        transition: 0.2s;
+        font-size: 1.2vw;
+        &:hover{
+          right: 1vw;
+          bottom: 1vh;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+  &__facts{
+    margin-top: 5vh;
+    background-image:
+            linear-gradient(to top, rgba(51, 51, 51, 0.29), rgba(46, 185, 140, 0.29)),
+            url(../../img/Saas.jpg);
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 33vh;
+    &_title{
+      text-align: center;
+      color: #2EB98C;
+      padding-top: 5vh;
+      color: rgb(46, 185, 140);
+      font-family: adobe-caslon-w01-smbd, adobe-caslon-w08-smbd, serif;
+      font-size: 4vh;
+      font-weight: bold;
+    }
+  }
+  &__text{
+    padding-top: 5vh;
+    background: rgba(11,23,11,0.3);
+    color: #E3E3E3;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .investor{
+    &__title{
+      padding-top: 7vh;
+    }
+  }
+}
+
+@media (max-width: 1390px) {
+  .investor{
+    &__title{
+      padding-top: 7vh;
+    }
+    &__subtitle{
+      &_btn{
+        &_icon{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .investor{
+    &__title{
+      padding-top: 3.5vh;
+    }
+    &__subtitle{
+      &_btn{
+        &_text{
+          font-size: 2.5vh;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 855px) {
+  .investor{
+    &__title{
+      padding-top: 9.8vh;
+      padding-bottom: 3vh;
+    }
+    &__subtitle{
+
+      padding-top: 5vh;
+      margin: auto;
+      width: 60vw;
+      &_btn{
+        &_text{
+          font-size: 2.5vh;
+        }
+      }
+    }
+  }
+}
+
+@media  (max-width: 700px) {
+  .investor{
+    &__subtitle{
+      &_btn{
+        &_text{
+          font-size: 2vh;
+        }
+      }
+    }
+    &__text{
+      font-size: 1.5vh;
+    }
+  }
+}
+
+@media  (max-width: 600px) {
+  .investor{
+    &__title{
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .investor{
+    &__subtitle{
+      &_btn{
+        &_text{
+          font-size: 1.8vh;
+        }
+      }
+    }
+    &__text{
+      font-size: 1.3vh;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .investor{
+    &__subtitle{
+      &_btn{
+        &_text{
+          font-size: 1.5vh;
+        }
+      }
+    }
+  }
+}

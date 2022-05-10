@@ -1,0 +1,137 @@
+.home{
+  width: 100vw;
+}
+
+.interview{
+
+  &__box{
+    width: 100vw;
+    height: 92vh;
+    background: linear-gradient(to top, rgba(105, 105, 105, 0.2), rgba(105, 105, 105, 0.4)),
+    url(../../img/carusel6.png) no-repeat;
+
+    background-size: 100%;
+  }
+  &__title{
+    padding-top: 5vh;
+    width: 86vw;
+    margin: auto;
+    color: #ffffff;
+
+    font-family: adobe-caslon-w01-smbd,adobe-caslon-w08-smbd,serif;
+    font-size: 5vh;
+    font-weight: 600;
+  }
+  &__subtitle{
+    width: 50vw;
+    color: #ffffff;
+    padding-left: 7vw;
+    padding-top: 3vh;
+    font-family: adobe-caslon-w01-smbd,adobe-caslon-w08-smbd,serif;
+    font-size: 4vh;
+    font-weight: 500;
+  }
+  &__text{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 86vw;
+    margin: auto;
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #66ff4f, 0 0 0.2em #ffffff;
+    font-family: futura-lt-w01-book,futura-lt-w05-book,sans-serif;
+    font-size: 18px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+
+  }
+  &__faqs{
+    /*background: linear-gradient(45deg, #b1ff9a, #90ff77, #ceffbc);*/
+    background: #1D8763;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+  }
+  &__faq{
+    width: 86vw;
+    margin: auto;
+    margin-bottom: 2vh;
+    &_ask{
+      text-align: left;
+      margin-bottom: 1vh;
+      &_text{
+        border: 1px #4BB490 solid;
+        border-radius: 15px 15px 15px 0px;
+        padding: 1vh;
+        font-family: futura-lt-w01-book,futura-lt-w05-book,sans-serif;
+        font-size: 2vh;
+        font-weight: bold;
+        letter-spacing: 0em;
+        line-height: 1.6;
+        background: rgba(37,175,129,0.89);
+        color: #ffffff;
+      }
+    }
+    &_answer{
+      text-align: right;
+      margin-bottom: 1vh;
+      &_text{
+        padding: 1vh;
+        font-family: futura-lt-w01-book,futura-lt-w05-book,sans-serif;
+        font-size: 2vh;
+        letter-spacing: 0em;
+        line-height: 1.6;
+          background: rgba(19,86,64,0.67);
+        border: 1px #4BB490 solid;
+        border-radius: 15px 15px 0px 15px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.green{
+  color: #24a319;
+}
+
+
+@media (max-width: 855px) {
+  .home{
+    padding-top: 5vh;
+  }
+
+  .interview{
+    &__title{
+      font-size: 4vh;
+    }
+    &__subtitle{
+      font-size: 3.5vh;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .interview{
+    &__box{
+      height: 80vh;
+    }
+    &__title{
+      font-size: 3vh;
+    }
+    &__subtitle{
+      font-size: 2.5vh;
+    }
+  }
+}
+
+@media (max-width: 522px) {
+  .interview{
+    &__box{
+      height: 60vh;
+    }
+    &__title{
+      font-size: 3vh;
+    }
+    &__subtitle{
+      font-size: 2.5vh;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.contact{
+  height: 87.5vh;
+  display: flex;
+  justify-content: space-between;
+  /*background: url(../../img/carusel5.png) ;*/
+  /*background-size: 200%;*/
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),
+  url(../../img/carusel5.png);
+  background-position: center;
+
+  &__text{
+    padding-left: 7vw;
+  }
+  &__title{
+    color: #27761D;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 5vh;
+  }
+  &__subtitle{
+    color: #ffffff;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 3vh;
+  }
+  &__form{
+    width: 45vw;
+    margin: 26vh 0 32vh 0;
+    background: rgba(6,6,6,0.8);
+  }
+  &__input{
+    width: 37vw;
+    height: 2.5vh;
+    padding-left: 1vw;
+    margin-top: 2vh;
+    border: none;
+    border-bottom: 2px rgba(53,171,116,0.43) solid;
+    border-radius: 7px;
+  }
+  &__description{
+    margin-top: 2vh;
+    width: 37vw;
+    height: 7vh;
+    resize: none;
+    padding-left: 1vw;
+    border-bottom: 2px rgba(53,171,116,0.43) solid;
+    border-radius: 10px;
+  }
+  &__submit{
+    height: 4vh;
+    border-radius: 5px;
+    border: 2px #27761D solid;
+    color: #27761D;
+    cursor: pointer;
+    margin-top: 1vh;
+    &:hover{
+      color: #ffffff;
+      background: #27761D;
+    }
+  }
+}
+
+@media (max-width: 855px){
+  .contact{
+    display: block;
+    &__title{
+      padding-top: 5vh;
+    }
+    &__form{
+      padding-top: 5vh;
+      margin: auto;
+      padding-left: 7vw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contact{
+    &__form{
+      width: 60vw;
+    }
+    &__input{
+      width: 50vw;
+    }
+    &__description{
+      width: 50vw;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+.app{
+
+}
+
+.body{
+  padding-top: 8vh;
+}
+
+@media (max-width: 855px) {
+  .body{
+    padding-top: 3vh;
+  }
+}

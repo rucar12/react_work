@@ -1,0 +1,53 @@
+.jobs{
+  min-height: 87.5vh;
+  background: #000000;
+  &__title{
+    padding-top: 5vh;
+    padding-left: 7vw;
+    color: rgb(46, 185, 140);
+    font-family: adobe-caslon-w01-smbd,adobe-caslon-w08-smbd,serif;
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  &__subtitle{
+    padding-top: 5vh;
+    padding-left: 7vw;
+    padding-bottom: 10vh;
+    color: #E3E3E3;
+    font-family: adobe-caslon-w01-smbd,adobe-caslon-w08-smbd,serif;
+    font-size: 4vh;
+  }
+  &__img{
+    margin-top: 10vh;
+    float: right;
+    text-align: right;
+    background: linear-gradient(to right, #000000, #24A319);
+    max-width: 50vw;
+    max-height: 47vh;
+    &_item{
+      padding-top: 3.5vh;
+      padding-bottom: 3.5vh;
+      width: 85%;
+    }
+  }
+  &__text{
+    padding-left: 7vw;
+    padding-bottom: 3vh;
+    color: #E3E3E3;
+    font-weight: normal;
+    font-size: 2vh;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+  }
+}
+
+.green{
+  color:#2EB98C;
+  padding-right: 2vw;
+}
+
+@media (max-width: 855px) {
+  .jobs{
+    padding-top: 5vh;
+  }
+}
